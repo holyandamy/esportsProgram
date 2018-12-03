@@ -1,0 +1,3 @@
+<view class='dialog animated zoomIn'>
+  <slot name='main'></slot>
+</view>

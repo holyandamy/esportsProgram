@@ -1,0 +1,33 @@
+<!--pages/shop/index.wxml-->
+<view class='shop'>
+  <view class='addmore'>
+    <view bindtap='addmoney' class='additem addmoney'>立即充值</view>
+    <view bindtap='mytools' class='additem mytools'>我的道具</view>
+  </view>
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="name">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100%" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="section">
+    <input class='searchinput' placeholder="站内搜索" />
+  </view>
+  <view class='nineblock'>
+    <view class='blocklist' wx:for='{{nineblock}}' wx:key='index'>{{item.title}}</view>
+  </view>
+  <view class='shoplist'>
+     <view class='item-list' wx:for='{{shoplist}}' wx:key='index'  data-index="{{index}}" bindtap='showdialog'>
+       <image src='{{item.imgurl}}'></image>
+     </view>
+  </view>
+  <view  data-hi="WeChat" > Click me! </view>
+    <dialog wx:if='{{dialog}}'>
+      <view slot='main'>
+        <view class='tx-center'>{{test.title}}</view>
+        <image src='{{test.imgurl}}'></image>
+      </view>
+    </dialog>
+</view>

@@ -1,0 +1,98 @@
+<!--pages/guessingDetail/index.wxml-->
+<view class='guessingDetail'>
+<!--选项卡-->
+  <view class='tabar'>
+    <view data-num="0"  class='mytool {{num==0?"active":""}}' bindtap='tabarClick'>宝石</view>
+    <view data-num="1"  class='toolrecord {{num==1?"active":""}}'  bindtap='tabarClick'>游戏币</view>
+  </view>
+  <view class='tabbarone gems'>
+    <view class='title'>
+    <image src='https://cdn.esportsmatrix.com/lol/Content/images/uploaded/league/1f9aee4e-4d43-4e93-ba82-4f058cf1bf46.png'></image>
+    LPL 2018 夏季赛 第二阶段
+    </view>
+    <view class='team'>
+      <view class='left'>
+        <text>JAG</text>
+        <image src='https://cdn.esportsmatrix.com/lol/Content/images/uploaded/team/8b74263f-658d-441b-b1a2-778876ff86c6.png'></image>
+      </view>
+      <view class='middle'>
+        <image src='//cfcdn.inplaymatrix.com/CdnMobile/images/vs_icon.png'></image>
+      </view>
+      <view class='right'>
+        
+        <image src='https://cdn.esportsmatrix.com/lol/Content/images/uploaded/team/c2466d90-69ee-430b-a915-6c784fef7f1c.png'></image>
+        <text>GRF</text>
+      </view>
+    </view>
+    <view class='tx-center'>
+      <image class='homeimgsmall' src='https://cdn.esportsmatrix.com/lol/Content/images/uploaded/team/8b74263f-658d-441b-b1a2-778876ff86c6.png'></image>
+      JAG
+    </view>
+    <view class='rates tx-center'>
+      <view>收益率：<text class='rateitem'>{{rateitem}}</text></view>
+      <view class='rates-des'>系统将自动接受更高收益率</view>
+    </view>
+    <view class='addmoney'>
+      <label>金额：
+        <image wx:if='{{num==0}}' class='gem-icon' src='https://cfcdn.inplaymatrix.com/CdnMobile/images/casino_gem.png'></image>
+        <image wx:if='{{num==1}}' class='gem-icon' src='https://cfcdn.inplaymatrix.com/CdnMobile/images/casino_coin.png'></image>
+      </label>
+      <input bindblur='addmoney' value='{{inputvalue}}' placeholder='请输入金额'></input>
+    </view>
+    <view>收益：
+      <image wx:if='{{num==0}}' class='gem-icon' src='https://cfcdn.inplaymatrix.com/CdnMobile/images/casino_gem.png'></image>
+      <image wx:if='{{num==1}}' class='gem-icon' src='https://cfcdn.inplaymatrix.com/CdnMobile/images/casino_coin.png'></image>
+      {{addmoney}}
+    </view>
+    <view class='sorry-tips' wx:if='{{sorryTips}}'>对不起,您竞猜的金额低於下限,請更改您的竞猜金额</view>
+    <view class='tx-center'><text>项目：</text><text class='colorf8e3a2'>BO3 总比赛胜利</text></view>
+    <view wx:if='{{num==0}}' class='bet-max-min'>
+      <view>
+        最低竞猜金额
+        <image class='gem-icon' src='https://cfcdn.inplaymatrix.com/CdnMobile/images/casino_gem.png'></image>
+        <text>1</text>
+      </view>
+      <view>
+        竞猜金额上限
+        <image class='gem-icon' src='https://cfcdn.inplaymatrix.com/CdnMobile/images/casino_gem.png'></image>
+        <text>455127</text>  
+      </view>
+    </view>
+
+  </view>
+  <view class='confirm' bindtap='confirm'>确认</view>
+</view>
+<!--竞猜弹窗-->
+<dialog wx:if='{{dialog}}'>
+    <view slot='main' class='confirmdialog'>
+      <view class='title'>
+        竞猜确认
+        <text class='closeDialog' bindtap='closeDialog'>X</text>
+      </view>
+      <view class='content'>
+        <view>
+          金额：
+          <image class='gem-icon' src='https://cfcdn.inplaymatrix.com/CdnMobile/images/casino_gem.png'></image>
+          <text>50</text>
+        </view>
+        <view>收益率：<text>1.692</text></view>
+        <view>
+          收益：
+          <image class='gem-icon' src='https://cfcdn.inplaymatrix.com/CdnMobile/images/casino_gem.png'></image>
+          <text>84.60</text>
+        </view>
+        <view class='d-team'>
+          <view class='title'><text>LPL2018夏季赛第二阶段</text></view>
+          <view class='homeandguest'>
+            <view class='left'>BLG</view>
+            <view class='middle'><text>VS</text></view>
+            <view class='right'>FPX</view>  
+          </view>
+          <view>项目：BLG</view>
+          <view><text>BO3总比赛胜利</text></view>
+          <view>比赛日期：2018-7-31</view>
+        </view>
+      </view>
+      <view class='dialogConfirm' bindtap='dialogConfirm'>确认</view>
+    </view>
+</dialog>

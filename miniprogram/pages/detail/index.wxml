@@ -1,0 +1,19 @@
+<!--pages/detail/index.wxml-->
+<text>pages/detail/index.wxml</text>
+ <view wx:if='{{hasMore}}'>查看更多</view>
+<view wx:for='{{subjects}}' wx:key='index'>
+   <view>
+     <image class='detailImg' src='{{item.images.small}}'></image>
+   </view>
+   <view>
+     <text>{{item.title}}</text>
+     <text>{{item.year}}</text>
+   </view>
+   <view>类型：<text wx:for='{{item.genres}}' wx:for-item='itemTypes' wx:key='index'>{{itemTypes}}</text></view>
+   <view>
+     <text>好评{{item.rating.stars}}%</text>
+   </view>
+  
+</view>
+<view wx:if='{{hasMore}}'>玩命加载。。。</view>
+<view wx:else>加载中。。。</view>

@@ -1,0 +1,21 @@
+/* pages/recharge/index.wxss */
+.listsmoney{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.listsmoney-item{
+  box-sizing: border-box;
+  width: 33.33%;
+  height: 200rpx;
+  border: 1px solid #999
+}
+.searchinput{
+  height:65rpx;
+  line-height: 65rpx;
+  padding-left: 20rpx;
+  text-indent: 20rpx;
+  border: 1px solid #3e3e3e;
+  font-size: 28rpx;
+
+}

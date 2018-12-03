@@ -1,0 +1,32 @@
+<!--pages/news/index.wxml-->
+
+<view class="wraper">
+  <head>
+    <view class='login' bindtap='loginhome' slot='login'>登陆</view>
+  </head>
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="name">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100%" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <list />
+  <!--<list listdatas='{{listdatas}}'></list>-->
+
+<view wx:for="{{listdatas}}" wx:key="name">
+   <navigator url='../detail/index?id={{item.id}}'>
+     <view class='indexlist'>
+     <view>
+       <image src='{{item}}' wx:for="{{item.imgurl}}" wx:key="name"></image>
+     </view>
+     <view>
+       <view class='title'>{{item.title}}</view>
+       <view class='des'><text class='destitle'>{{item.destitle}}</text><text>{{item.destime}}</text></view>
+     </view>
+   </view>
+   </navigator>
+</view>
+
+</view>

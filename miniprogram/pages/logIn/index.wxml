@@ -1,0 +1,14 @@
+<!--pages/logIn/index.wxml-->
+<view class='login'>
+   <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section">
+      <view>用户名</view>
+      <input placeholder="用户名" focus="{{focus}}" />
+      <view>密码</view>
+      <input password='true' placeholder="密码" focus="{{focus}}" />
+    </view>
+
+</form>
+<text>pages/logIn/index.wxml</text>
+</view>
+

@@ -1,0 +1,34 @@
+<!--pages/rank/index.wxml
+<text>pages/rank/index.wxml</text>-->
+<view class='rank'>
+  <view class='tab'>
+    <view data-tabnum="0"  class='tab-item {{tabnum==0?"active":""}}' bindtap='tabarClick'>总榜</view>
+    <view data-tabnum="1"  class='tab-item {{tabnum==1?"active":""}}' bindtap='tabarClick'>月榜</view>
+    <view data-tabnum="2"  class='tab-item {{tabnum==2?"active":""}}' bindtap='tabarClick'>周榜</view>
+  </view>
+  <view class='tab-des'>
+    <view wx:if='{{tabnum==0}}'>
+      <view class='des-title'>
+        <text>排名</text>
+        <text>玩家名</text>
+        <text>宝石</text>
+      </view>
+      <view class='ranklists'>
+        <view class='item-list' wx:for='{{allrank}}' wx:key='index'>
+          <view class='ranknum'>
+            <text wx:if='{{index==0}}'>第一名</text>
+            <text wx:elif='{{index==1}}'>第二名</text>
+            <text wx:elif='{{index==2}}'>第三名</text>
+            <text wx:else>{{item.num}}</text>
+          </view>
+          <view class='rankdes'>
+            <view>{{item.title}}<text class='coins'>{{item.gem}}</text> </view>
+            <view class='des'>{{item.des}}</view>
+          </view>
+        </view>
+      </view>
+    1111</view>
+    <view wx:if='{{tabnum==1}}'>222</view>
+    <view wx:if='{{tabnum==2}}'>333</view>
+  </view>
+</view>

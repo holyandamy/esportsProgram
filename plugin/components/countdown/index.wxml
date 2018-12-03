@@ -1,0 +1,13 @@
+<view wx:if='{{countDownDay>0}}'>
+  <slot name='title'></slot>
+  剩<text class='times days'>{{countDownDay}}</text>天<text class='times hours'>{{countDownHour}}</text>小时<text class='times minutes'>{{countDownMinute}}</text>分钟<text>{{countDownSecond}}</text>秒
+</view>
+<view wx:elif='{{countDownHour>0}}'>
+<slot name='title'></slot>
+  剩<text class='times hours'>{{countDownHour}}</text>小时<text class='times minutes'>{{countDownMinute}}</text>分钟<text>{{countDownSecond}}</text>秒
+</view> 
+<view wx:elif='{{countDownMinute>0}}'> 
+<slot name='title'></slot>
+  剩<text class='times minutes'>{{countDownMinute}}</text>分钟<text>{{countDownSecond}}</text>秒
+</view>
+<view wx:else> 剩<text>{{countDownSecond}}</text>秒</view>

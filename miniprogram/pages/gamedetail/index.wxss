@@ -1,0 +1,205 @@
+/* pages/gamedetail/index.wxss */
+.fl{
+  float: left
+}
+.fr{
+  float: right
+}
+.gamedetail{
+  background: #333
+}
+.header{
+  display: flex;
+  color: #fff;
+  background: #2f3a79;
+  text-align: center
+}
+.header .left{
+  width: 140rpx;
+  height: 110rpx;
+  font-size: 28rpx;
+}
+.header .left image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 15rpx
+}
+.header .middle{
+  flex: 1;
+  line-height: 110rpx;
+  font-size: 42rpx;
+}
+.header .middle image{
+  width: 50rpx;
+  height: 34rpx;
+  margin-right: 20rpx
+}
+.header .right{
+  width: 140rpx;
+  height: 110rpx;
+  font-size: 28rpx;
+}
+.header .right image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 15rpx
+}
+
+/*live*/
+.live-header{
+  color:#fff;
+  padding: 10rpx;
+  border: 1rpx solid #8d662d;
+  background: linear-gradient(to bottom, #1f1804 0%, #130f02 100%);
+}
+
+.live-header .title{
+  font-size: 34rpx;
+  color: #f8e3a2;
+}
+.live-header .daojishi{
+  color: #a3a3a3
+}
+.live-header .times{
+  float: right;
+  margin-top: 10rpx;
+  font-size: 24rpx;
+}
+
+.teams{
+  display: flex;
+  height: 114rpx;
+  margin: 0;
+  text-align: center
+}
+.teams image{
+  width: 60rpx;
+  height: 60rpx;
+  vertical-align: -10rpx
+}
+.teams .left{
+  flex: 1;
+  line-height: 114rpx;
+  border:1px solid  #634c05;
+  color: #fff;
+  background: linear-gradient(to bottom, #1f1804 0%, #130f02 100%);
+  border-radius: 5rpx;
+}
+.teams .middle{
+  width: 120rpx;
+  margin: 0 20rpx;
+  font-size: 26rpx;
+  text-align: center;
+  background: linear-gradient(to bottom, #ffe9b3 0%, #caab60 100%);
+  border-radius: 10rpx;
+}
+.teams .right{
+  flex: 1;
+   line-height: 114rpx;
+  border:1px solid  #634c05;
+  color: #fff;
+  background: linear-gradient(to bottom, #1f1804 0%, #130f02 100%);
+  border-radius: 5rpx;
+}
+.field{
+  display: flex;
+  color: #f8e3a2;
+  text-align: center
+}
+.field .left{
+  flex: 1;
+}
+.field .middle{
+  width: 120rpx;
+  margin: 0 20rpx;
+}
+.field .right{
+   flex: 1;
+}
+.live{
+
+}
+.live video{
+  width: 100%
+}
+.updatetime{
+  font-size: 24rpx;
+  color: #fff;
+  opacity: .7
+}
+.fieldguess{
+
+}
+.fieldguess .tab{
+  display: flex;
+  height: 86rpx;
+  line-height: 86rpx;
+  color: #f8e3a2;
+  background: linear-gradient(to bottom, #1a2a46 0%, #0d192c 100%);
+  text-align: center
+}
+.fieldguess .tab view{
+  flex: 1
+}
+.matchHandicap{
+
+}
+.matchHandicap .tab{
+  display: flex;
+  height: 92rpx;
+  line-height: 92rpx;
+  color: #f8e3a2;
+  background: linear-gradient(to bottom, #1a2a46 0%, #0d192c 100%);
+  text-align: center
+}
+.matchHandicap .tab view{
+  flex: 1
+}
+/*比赛竞猜列表*/
+.matchlist{
+
+}
+.matchlist .title{
+  padding: 10rpx 30rpx;
+  font-size: 26rpx;
+   color: #f8e3a2;
+}
+.matchlist .homeandguest{
+  display: flex;
+  padding: 10rpx 30rpx;
+  color: #f8e3a2;
+}
+.matchlist .homeandguest image{
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx
+}
+.matchlist .homeandguest .home{
+  flex: 1;
+  margin-right: 20rpx
+}
+.matchlist .homeandguest .home-a{
+  height: 130rpx;
+  line-height: 130rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 10rpx;
+  background: linear-gradient(to bottom, #d12727 0%, #660808 100%);
+}
+.matchlist .homeandguest .home-a image{
+  vertical-align: middle
+}
+.matchlist .homeandguest .guest{
+  flex: 1
+}
+.matchlist .homeandguest .guest-a{
+  height: 130rpx;
+  line-height: 130rpx;
+  text-align: center;
+  color: #fff;
+  border-radius: 10rpx;
+  background: linear-gradient(to bottom, #2a4b8f 0%, #0d1837 100%);
+}
+.matchlist .homeandguest .guest-a image{
+  vertical-align: middle
+}

@@ -1,0 +1,10 @@
+.head{
+  height: 100rpx;
+  line-height:125rpx;
+  text-align: center;
+  background-color: #191919;
+}
+.head .logoImg{
+  width: 180rpx;
+  height:60rpx;
+}

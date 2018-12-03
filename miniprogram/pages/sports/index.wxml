@@ -1,0 +1,58 @@
+<!--pages/sports/index.wxml
+<dialog>
+  <view slot='main'>赛事弹窗</view>
+</dialog>
+-->
+<view class='sports'>
+   <scroll-view class="scroll-view_H" scroll-x scroll-with-animation style="width: 100%">
+     <view class='allgames'>
+      <view data-num='{{index}}' bindtap='gameItemClick' class='scroll-view_H-item itemgame {{item}} {{num==index?"active":""}}' wx:for='{{allgames}}' wx:key='index'>{{item.title}}</view>
+     </view>
+  </scroll-view>
+  <view class='tab'>
+    <view data-tabnum="0"  class='tab-item {{tabnum==0?"active":""}}' bindtap='tabarClick'>最新赛果</view>
+    <view data-tabnum="1"  class='tab-item {{tabnum==1?"active":""}}' bindtap='tabarClick'>赛事进程</view>
+    <view data-tabnum="2"  class='tab-item {{tabnum==2?"active":""}}' bindtap='tabarClick'>队伍</view>
+    <view data-tabnum="3"  class='tab-item {{tabnum==3?"active":""}}' bindtap='tabarClick'>选手</view>
+  </view>
+  <view wx:if='{{tabnum==0}}'>
+    <view class='tabone' wx:for='{{tabonedatas}}' wx:key='index'>
+      <view class='tabone-title'>2018/07/30 星期一{{item.title}}</view>
+      <view class='tabone-content'>
+        <view class='tabone-left'>
+          <image src='https://cdn.esportsmatrix.com/lol/Content/images/uploaded/league/dd4e7c22-5c45-492b-a98e-f7f8c82b2c27.png'></image>
+        </view>
+        <view class='tabone-middle'>
+          <view>RB7<text class='gameResult' bindtap='gameResult'>比赛结果</text></view>
+          <view>PDA</view>
+        </view>
+        <view class='tabone-right'>
+          <view>0</view>
+          <view>1</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:if='{{tabnum==1}}'>
+     <view class='tabtwo'>
+      bbbbbbbbbbb
+    </view>
+  </view>
+  <view wx:if='{{tabnum==2}}'>
+     <view class='tabthree'>
+      cccccccccccc
+    </view>
+  </view>
+  <view wx:if='{{tabnum==3}}'>
+     <view class='tabfour'>
+      ddddddddddddd
+    </view>
+  </view>
+  <view>111111111111</view>
+  <view>111111111111</view>
+  <view>111111111111</view>
+  <view>111111111111</view>
+  <view>111111111111</view>
+  <view>111111111111</view>
+  <view>111111111111</view>
+</view>

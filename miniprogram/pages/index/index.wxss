@@ -1,0 +1,146 @@
+/* pages/index/index.wxss */
+.right{
+  float: right
+}
+.slide-image{
+  width: 100%
+}
+.wraper{
+  color: #fff;
+  background-color: #000;
+}
+.login{
+  display: inline;
+  float: right;
+  font-size: 32rpx;
+  margin-top: -70rpx;
+  margin-right: 20rpx;
+}
+.allgames{
+  height: 130rpx;
+}
+.allgames .itemgame{
+  width: 120rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  margin: 10rpx;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+  text-align: center;
+ 
+
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view_H-item{
+  display: inline-block;
+}
+.allgames .gameall{
+  background-color: rebeccapurple
+}
+.allgames .lol{
+  background-color: red
+}
+.allgames .dota2{
+ background-color: yellow 
+}
+.allgames .csgo{
+  background-color: brown
+}
+.allgames .ow{
+  background-color: pink
+}
+.allgames .dataosha{
+  background-color: goldenrod
+}
+.gamestype{
+  
+}
+.gamestype .g-itemtype{
+  font-size: 28rpx;
+  padding: 4rpx 30rpx;
+  margin: 10rpx;
+  border-radius: 10rpx;
+  border: 0.825px solid #4a4a4a;
+  background-color: #212121;
+}
+.gamestype .g-itemtype.active{
+  background-color: #861c0e;
+  border: 0.825rpx solid #d7240d;
+}
+.rateblock{
+  width: 100%;
+  font-size: 24rpx;
+  margin: 0 10rpx;
+}
+.rateblock .rate{
+  float: right;
+  padding-right: 20rpx
+}
+/*比赛*/
+.competition{
+  margin: 0 10rpx;
+}
+.competition .c-title{
+  height: 44rpx;
+  line-height: 44rpx;
+  text-align: right;
+  font-size: 24rpx;
+}
+.competition .c-title text{
+ color: #f8e3a2
+}
+.competition .c-item{
+  display: flex;
+  border: 2rpx #334157 solid;
+  font-size: 24rpx
+}
+.competition .c-item-left{
+  width: 120rpx;
+  height: 128rpx;
+  border: 2rpx #334157 solid;
+  text-align: center
+}
+.competition .c-item-left image{
+  max-height: 50rpx;
+  max-width: 100rpx;
+}
+.competition  .c-item-middle{
+  flex: 1;
+  margin-right: 40rpx
+}
+.competition  .c-item-middle image{
+  max-height: 32rpx;
+  max-width: 50rpx;
+}
+.competition  .c-item-middle .md-one{
+  border-bottom: 1rpx #334157 solid;
+  height: 64rpx;
+ 
+}
+.competition .c-item-middle .right{
+  color: #f8e3a2
+}
+.competition  .c-item-middle .md-one,.competition  .c-item-middle .md-two{
+ line-height: 64rpx
+}
+.competition .c-item-right{
+  width: 120rpx;
+  height: 128rpx;
+
+   text-align: center
+}
+.competition .c-item-right .btn-a{
+  display: block;
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  border: 2px #274da6 solid;
+  margin: 0 auto;
+  margin-top: 10rpx;
+  border-radius: 20rpx
+}
+.competition{
+  
+}

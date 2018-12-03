@@ -1,0 +1,76 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/index",
+    "pages/logIn/index",
+    "pages/register/index",
+    "pages/detail/index",
+    "pages/personalCenter/index",
+    "pages/shop/index",
+    "pages/sports/index",
+    "pages/news/index",
+    "pages/recharge/index",
+    "pages/mytools/index",
+    "pages/paysuccess/index",
+    "pages/payfail/index",
+    "pages/gamedetail/index",
+    "pages/rank/index", 
+    "pages/betsHistory/index",
+    "pages/guessingDetail/index",
+    "pages/gameResult/index"
+
+  ],
+  "plugins": {
+    "myPlugin": {
+      "version": "dev",
+      "provider": "wx2a1c40661f73e10d"
+    }
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "66电竞王",
+    "backgroundColor": "#000000",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#35495e",
+    "borderStyle": "white",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "text": "竞猜",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/1.jpeg",
+        "selectedIconPath": "images/2.jpeg"
+      },
+      {
+        "text": "新闻",
+        "pagePath": "pages/news/index",
+        "iconPath": "images/3.jpeg",
+        "selectedIconPath": "images/4.jpeg"
+      },
+      {
+        "text": "赛事",
+        "pagePath": "pages/sports/index",
+        "iconPath": "images/3.jpeg",
+        "selectedIconPath": "images/4.jpeg"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/personalCenter/index",
+        "iconPath": "images/3.jpeg",
+        "selectedIconPath": "images/4.jpeg"
+      },
+      {
+        "text": "商城",
+        "pagePath": "pages/shop/index",
+        "iconPath": "images/3.jpeg",
+        "selectedIconPath": "images/4.jpeg"
+      }
+    ]
+  },
+  "functionalPages": true
+}

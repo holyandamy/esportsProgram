@@ -1,0 +1,9 @@
+{
+  "publicComponents": {
+    "list": "components/list/list",
+    "head": "components/head/index",
+    "dialog": "components/dialog/index",
+    "countdown": "components/countdown/index"
+  },
+  "main": "index.js"
+}

@@ -1,0 +1,9 @@
+<!--pages/betsHistory/index.wxml-->
+<view class='betsHistory'>
+  <view class='tabar'>
+    <view data-num="0"  class='mytool {{num==0?"active":""}}' bindtap='tabarClick'>待定竞猜</view>
+    <view data-num="1"  class='toolrecord {{num==1?"active":""}}'  bindtap='tabarClick'>交易记录</view>
+  </view>
+  <view wx:if='{{num==0}}' class='tabbarone'>您还没有任何待定竞猜</view>
+  <view wx:if='{{num==1}}' class='tabbartwo'>您还没有任何交易记录</view>
+</view>

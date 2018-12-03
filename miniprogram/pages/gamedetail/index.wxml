@@ -1,0 +1,91 @@
+<!--pages/gamedetail/index.wxml-->
+
+<view class='gamedetail'>
+  <view class='header'>
+    <view class='left' bindtap='competitionHistory'>
+      <image src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD8AAAA8CAMAAADmFZJDAAAAZlBMVEUAAAD446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446LjwH26AAAAIXRSTlMALPG0IvlibBrVwAZ/WeoNxj3aTeCZuqRyFsyuioRFkjYIH8t+AAACRklEQVRIx+2WydbbIAyFL54nPM+Jnfj9X7LNMYMx4D/Jou2i385HuiCEhIy/D3Fz50PmAAJv+wa5wO0rvZOCUW9f4YHRf6cvwKi+ki8Q0Pbz099xICWfMuE/f4T0HZ/MtVD2rEqLJw3CMFg96BTxD132zBJnY9RdgxMPqzqOANBkU6lHcajr/itT4FkaDC3FAVv4M4DMYhsOIYRml7wA3KujCTqjB0FabnZyD4IqHMMT4woc5H3WEC+qwiE/xnfNIFwfRF52EIv04hLK/ZJdTee6S3HMaYYLCp95dft3I7dcuUmvRj2pd+zM24tqHzhsARdWpu3ksr+RrHDWHwNY+JRQq6zhNa+crQpUwnTfju+n65Hvd/haPtUHWOqxQodNP+4OlbH/Sm7OzvpVXo9wcDR9x2cq0fdXp94NgK/pR+ada13aznFdL7KKZsgyl1CWnl7Ty5qgIkFEC2BlZxpsr0wBVDJC75EolF7qa/pWmf1Sb6RwRHZkN0pqcH0LM63WoZNMQE7E+WOYKUX1SoIle7GEE35zv+ygjifSysxuwkzAC8kGK/AGZqLd7Bew0Cl2T4WkKK8DmLbDBTXaBLmh2XaeMJLI9sPT+HOXX73SGasD6//jIgKIDQuMzFZZ56cvMrC1BCfux7fRMuTumDZOppRRxRd2WGTEMv4aOa8zwvNO5W6VWDFx/DNbrw7meFjGbEic4yMhmSINsk92KwHegPoWtdPgLbzeKHcjvEsQa+qY4hMCJQbfpfgUj3Z9nTt53T9ohH+LX4OGx9tguto8AAAAAElFTkSuQmCC'></image>
+      <view>竞猜历史</view>
+    </view>
+    <view class='middle'>
+      <image src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFEAAAA6CAMAAAD/YkWdAAABqlBMVEUAAAD446K+mCT24J3AmyrTs1Hs04bQr0rNqkLOrEbozn3hxW7EoTLcv2PXuFjy2pLIpTnKpz3Dny/gxG3XuVrr04bDni7kyXbZvGD03pn13pnv143mzHvkyXXw2I7u1oz135vJpjvp0IDavWDavGHcv2Tlynjv143dwGbWuFnp0IHjyHTUtFPRsUzEoTLBnCvnzn303ZjNrEXewmn135rWt1fu14zkyXbgxG7u1ovRsU3lynfQsEvp0IHCni7p0YLCnSzLqUDUtFPIpDjOrUbs04fBnSzt1InUtVTkyXXKqD/kyXbpz4DMq0T34qG+mSXIpTrNq0Tq0YPu1ozJpjvw2I/24J3Mq0LNq0TQsEv446K+mCTixnHq0YO/mijkyXbLqUDUtVXVt1j34qHau1/Yul3ewmvnzX3HpTnVt1jUtVXVt1i/mib34qH24Z7avWHWuFnnzXzjyHTQsEvp0IHr04bv143Ipjrcv2XdwGjewmvYul3GozXgxG3Ts1LlynjhxXDUtVXSsk/OrUjx2ZHNrEXMqkPLqUDKpz7t1Iny3JXDoDDCnSzz3Zj9T2vhAAAAbHRSTlMAnp5tbaqoqKibqKiom1iop6CgnJyYG6qop6Cem1ihnJubWzYT0LSoqKibm5ubm5uKd1lYIBwbDQXy7d7Szc28ppV4dm5lTUpKRUM7LCX19e/s6Obl1c3MvY2Jhn12dXBpXlJMKfX08te9sZKVCmEEAAADOUlEQVRYw72WBVOiURiFzwYrGGug2N0da3d3d/e2rgqIrSh2/Od9vZ8o8X7CXpx9ZpTh3HOeufMNzACgdPqdFNOl4FnpX5ekfwUc5es+wN6y+I8PFIMhiQ7GP0gwTsMYMMTQQRI8wl8lWv1Agmi1OyY9PDzIGWnIGmNvb2+ljME0VDUGv63x/PxczkjDBMcgLaW4A0TiGxkri6soGOslo8ViyYQEmTR8MXaMWQQjFW9jLE+w2GlD4s3NzSdI8ImGsRDMVd08UjVC/yIQsb29LWekoTB21W0LGkofXYlqxjRvjeUkeGS4TYkikGM2mxljW12PJyMNi7AwbBYUVTxFOcLoDzdSzOaIcryGPw0bMhRfQ6oSCWPc1tYWZ6T4+1zla8YtOzUpDlGcmjFedOs6vDAWVcLZeHJyEskYTxQie6FChlLIcChE0vs45BqNRs5otEPPnCXSSNTEu0a5whigbiToMXF0GY3WWecoQBj1VquVM1odyGA/ST2zq3AxUlcP/dHREWP8cuSEvgxeEEBNMu7v73PGfWe+LXhjpKIeQXt7e1mMcc+V9C54IotqQQja3d3ljLvupKd6MlKJjBsbG1Fw4/OGOx6NUVT6B2N6J+CVMfzg4IAzHjjztRmeiaJiOMI3NzezGeOmE+FefXqyqemd8Sf7AJd/L7PGvNPTUw1jPH2megkcS3T0q88p0lCUh7zj42POeGxnqgIsGnHa7BrlIf/s7IwzniloVqGCRinUdjpH+cg3mUx+cKPE9AjVVfEzPeFX5hjlQ6durG4GPBup1+oQ6aCz2Wyc0WbTleFVIw0nNTZBbfdzRMaLiwst3Fic8PSV09JwCq1DFwJd2lNExsvLS63MLwAtDUMBQ9OlYKhViXRIvrq60kICLQ1DQXRPXAkm+5pElHx9fS1npGEoBC2D14JR+mtC8s7OTggkCKEhGQUGevPEou9GhfYfinA0DcmHh4dyRhq+GFHZMkhBfR9QQK+BkCCQhmGOgaGkpRvw2chQcHd3J2ek4X8yFt7f3zdCgkYassYwOiiEBKpXKVxbW6v/KEE9Ddk7zq/5wDwYDL4YDeBoH5D1DbSDxzDzXooZ/oZ/AXPYLNH3hnlDAAAAAElFTkSuQmCC'></image>
+      <text>第一局进行中</text>
+    </view>
+    <view class='right'>
+      <image src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA+CAMAAABTPci/AAAAWlBMVEUAAAD446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446L446LY4Dd0AAAAHXRSTlMA3bHtncu3D0Q40JeNUOcKMiOldm8qBVpIxX5hGRu61SkAAAECSURBVEjH3dRty4MgFMZxe7S0LbWsu7br+3/NW5DGYByzBhP6vTlv+kOdRPauK0grIygEaCLSCODsQ/sYh1EioHMPzOotmQUiVbetkTig882KQ8bX55eNanepxmwr6QCsLJIEMLi5ABmLVgC1Gxlg4qMaED6S8VEOVD4qfx3ZOqdpIvpDgCKi5kykRIBOvr0rRhPnPYH3VNQWd5r98kR8f/Z0KWnP5Cu/YsRvATz5xXIq4k0AT77yK0a6C3gmP0ZtEWDpG5Y2JV95ZCTcEL6NlAGLGwZAE9vMAOT2d+Y+JuEPONa/pnMX2S5RANsCpgoHLMybSkST7EUNpt6Xm8Gy0/4Ba0Rs4HDAWXAAAAAASUVORK5CYII='></image>
+      <view>串联清单</view>
+    </view>
+  </view>
+  <view class='live-header'>
+    <text class='title'>滚球竞猜</text>
+    <view class='times'>
+      <countdown countdown='{{timetype}}'>
+        <text class='daojishi' slot='title'>竞猜结束倒计时:</text>
+      </countdown>
+    </view>
+  </view>
+  <!--主次队-->
+  <view class='teams'>
+    <view class='hometeam left'>BBQ
+      <image src='https://cdn.esportsmatrix.com/lol/Content/images/uploaded/team/778a58ea-fca0-42fe-8c89-6f33aaa8dd3f.png'></image>
+    </view>
+    <view class='middle'>立即滚球</view>
+    <view class='guestteam right'>
+      HLE
+      <image src='https://cdn.esportsmatrix.com/lol/Content/images/uploaded/team/a2afefb3-c743-436e-a9b6-f13a0767c6fd.png'></image>
+    </view>
+  </view>
+  <!--场次-->
+  <view class='field'>
+    <view class='left'>第一局</view>
+    <view class='middle'>第二局</view>
+    <view class='right'>第三局</view>
+  </view>
+  <!--视频-->
+  <view class='live'>
+    <view class='updatetime'>
+      <text>更新时间:</text>
+      <text class='fr'>游戏进行:</text>
+    </view>
+    <video src='http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400' enable-danmu danmu-btn controls></video>
+  </view>
+  <!--场次竞猜-->
+  <view class='fieldguess'>
+    <view class='tab'>
+      <view>第一局</view>
+      <view>第二局</view>
+    </view>
+  </view>
+  <!--比赛盘口-->
+  <view class='matchHandicap'>
+    <view class='tab'>
+      <view>比赛盘口</view>
+      <view>特别盘口</view>
+    </view>
+    <!--比赛列表-->
+    <view class='matchlist' wx:for='{{matchlist}}' wx:key='index'>
+      <view class='title'>
+        <text class='number'>{{item.num}}</text>
+        <text class='text'>{{item.title}}</text>
+      </view>
+      <view class='homeandguest'>
+        <view class='home'>
+          <view class='home-a' bindtap='homeTo'>
+            <image src='{{item.home.imgurl}}'></image>
+            <text>{{item.home.des}}</text>
+          </view>
+          <view>{{item.home.rates}}</view>
+          <view><text>{{item.home.types}}</text></view>
+        </view>
+        <view class='guest'>
+          <view class='guest-a' bindtap='guestTo'>
+            <image src='{{item.guest.imgurl}}'></image>
+            <text>{{item.guest.des}}</text>
+          </view>
+          <view>{{item.guest.rates}}</view>
+          <view><text>{{item.guest.types}}</text></view>
+        </view>
+      </view>
+      <view></view>
+    </view>
+  </view>
+</view>

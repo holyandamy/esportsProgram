@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "list": "plugin://myPlugin/list",
+    "head": "plugin://myPlugin/head",
+    "dialog": "plugin://myPlugin/dialog"
+  }
+}

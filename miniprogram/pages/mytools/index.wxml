@@ -1,0 +1,10 @@
+<!--pages/mytools/index.wxml
+<text>pages/mytools/index.wxml</text>-->
+<view class='mytools'>
+  <view class='tabar'>
+    <view data-num="0"  class='mytool {{num==0?"active":""}}' bindtap='tabarClick'>我的道具</view>
+    <view data-num="1"  class='toolrecord {{num==1?"active":""}}'  bindtap='tabarClick'>道具记录</view>
+  </view>
+  <view wx:if='{{num==0}}' class='tabbarone'>您还没有任何道具</view>
+  <view wx:if='{{num==1}}' class='tabbartwo'>您还没有任何记录</view>
+</view>

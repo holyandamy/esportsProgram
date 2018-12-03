@@ -1,0 +1,25 @@
+/* pages/betsHistory/index.wxss */
+.betsHistory{
+  background-color: #000
+}
+.tabar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.tabar view{
+  box-sizing: border-box;
+  width: 50%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  color:#fff;
+  border: 1px solid #756c50;
+  text-align: center
+}
+.tabar view.active{
+  color: #f8e3a2;
+}
+.tabbarone,.tabbartwo{
+  color:#fff;
+}

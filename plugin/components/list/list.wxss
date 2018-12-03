@@ -1,0 +1,22 @@
+.indexlist{
+  display: flex;
+  margin: 20rpx 0;
+      background-color: rgba(12, 36, 51, 0.7);
+}
+.indexlist image{
+  display: block;
+  width: 180rpx;
+  height: 160rpx;
+  margin: 0 20rpx
+}
+.indexlist .title{
+  font-size: 32rpx
+}
+.indexlist .des{
+  margin-top: 20rpx; 
+  font-size: 24rpx
+}
+.indexlist .destitle{   
+  padding: 6rpx;
+  background-color: #043446;
+}

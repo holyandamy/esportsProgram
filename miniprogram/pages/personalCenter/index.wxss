@@ -1,0 +1,57 @@
+/* pages/personalCenter/index.wxss */
+.personalCenter{
+
+}
+.header{
+  display: flex;
+  padding: 15rpx 10rpx;
+  color:#fff;
+  background: #333
+}
+.h-left image{
+  width: 112rpx;
+  height: 112rpx;
+}
+.h-middle{
+  flex: 1;
+  font-size: 32rpx;
+  padding-left: 20rpx;
+}
+.h-right{
+  width: 126rpx;
+  height: 100rpx;
+  margin-top: 12rpx;
+}
+.recharge{
+   width: 126rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color:#333;
+  border-radius: 6rpx;
+  background: linear-gradient(180deg,#f0e497,#a9893d);
+}
+
+.tab{
+  display: flex;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #fff;
+  font-size: 34rpx;
+  text-align: center;
+  background: linear-gradient(#292929,#161616);
+}
+.tab .tab-item{
+  flex:1
+}
+.tab .tab-item.active{
+  color:#a9893d
+}
+
+.look-rank{
+  height: 80rpx;
+  line-height: 80rpx;
+  background: linear-gradient(180deg,#e9c760,#9e8330);
+  text-align: center
+}

@@ -1,0 +1,101 @@
+/* pages/sports/index.wxss */
+.sports{
+  color:#fff;
+  background-color: #121b27;
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view_H-item{
+  display: inline-block;
+}
+.allgames{
+  /* height: 130rpx; */
+  background-color: #333
+}
+.allgames .itemgame{
+  width: 120rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 20rpx;
+  font-size: 28rpx;
+  text-align: center;
+  color: #c1c1c1;
+ 
+}
+.allgames .itemgame.active{
+  color: #15a0fe;
+}
+
+/*tab*/
+.tab{
+  display: flex;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: 0 30rpx;
+  color: #fff;
+  font-size: 34rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  background: linear-gradient(#292929,#161616);
+}
+.tab .tab-item{
+  flex:1
+}
+.tab .tab-item.active{
+  color:#a9893d
+}
+
+.tabone{
+
+}
+.tabone-title{
+  text-align: center;
+  font-size: 40rpx;
+  color: #898d93;
+}
+.tabone-content{
+  display: flex
+}
+.tabone-left{
+  width: 188rpx;
+  height: 200rpx;
+  line-height: 200rpx;
+  text-align: center
+}
+.tabone-left image{
+  width: 130rpx;
+  height: 130rpx
+}
+.tabone-middle{
+  flex: 1;
+}
+.tabone-middle > view{
+  position: relative;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-top: 1px solid #172836;
+}
+.tabone-middle .gameResult{
+  position: absolute;
+  bottom:-24rpx;
+  right:20rpx;
+  z-index: 10;
+  line-height: 50rpx;
+ padding: 0 20rpx;
+  font-size: 28rpx;
+  background-color: #1e66b7;
+  border-color: #1e66b7;
+  border-radius: 10rpx;
+  color: #fff;
+}
+.tabone-right{
+  
+}
+.tabone-right > view{
+  height: 100rpx;
+  width: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  border: 1px solid #172836
+}

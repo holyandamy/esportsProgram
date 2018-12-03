@@ -1,0 +1,15 @@
+<!--<view wx:for="{{list}}" wx:key="name">
+  <view>{{item.name}}:{{item.price}}</view>
+</view>
+<view wx:for="{{listdatas}}" wx:key="name">
+   <view class='indexlist'>
+     <view>
+       <image src='{{item}}' wx:for="{{item.imgurl}}" wx:key="name"></image>
+     </view>
+     <view>
+       <view class='title'>{{item.title}}</view>
+       <view class='des'><text class='destitle'>{{item.destitle}}</text><text>{{item.destime}}</text></view>
+     </view>
+   </view>
+</view>
+<navigator url='pages/home/index.wxml'>7777</navigator>-->

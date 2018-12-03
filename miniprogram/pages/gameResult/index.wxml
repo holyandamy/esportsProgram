@@ -1,0 +1,34 @@
+<!--pages/gameResult/index.wxm
+<text>pages/gameResult/index.wxml</text>l-->
+<view class='gameResult'>
+  <view class='header'>
+    <view>
+      <image src='https://cdn.esportsmatrix.com/lol/Content/images/uploaded/team/56e32ffc-a393-4a8f-8f83-cc6c2779dbdf.png'></image> 
+    </view>
+    <view>
+      <text>0</text>
+      <text>:</text>
+      <text>1</text> 
+    </view>
+    <view>
+      <image src='https://cdn.esportsmatrix.com/lol/Content/images/uploaded/team/81e48b7f-500d-42dd-a48d-6bc7ab34fee2.png'></image> 
+    </view>
+  </view>
+  <!--tab-->
+  <view class='tabar'>
+    <view data-num="0"  class='mytool {{num==0?"active":""}}' bindtap='tabarClick'>队伍数据</view>
+    <view data-num="1"  class='toolrecord {{num==1?"active":""}}'  bindtap='tabarClick'>选手数据</view>
+    <view data-num="2"  class='toolrecord {{num==2?"active":""}}'  bindtap='tabarClick'>重播</view>
+  </view>
+  <view wx:if='{{num==0}}' class='tabbarone'>
+    <view class='teamdatas' wx:for='{{teamdatas}}' wx:key='index'>
+      <text class='title'>{{item.title}}</text>
+      <view class='fr'>
+        <text class='des'>{{item.des}}</text>
+        <text class='status'>{{item.status}}</text>
+      </view>
+    </view>
+  </view>
+  <view wx:if='{{num==1}}' class='tabbartwo'>您还没有123123</view>
+  <view wx:if='{{num==2}}' class='tabbarthree'>您还没有任何记录</view>
+</view>

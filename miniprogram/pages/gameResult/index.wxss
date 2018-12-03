@@ -1,0 +1,56 @@
+/* pages/gameResult/index.wxss */
+.fr{
+  float: right
+}
+.gameResult{
+      background-color: #192534;
+}
+.header{
+  box-sizing: border-box;
+  padding: 60rpx 30rpx;
+  display: flex;
+  height: 300rpx;
+  line-height: 150rpx;
+  text-align: center;
+  background: url('https://cdn.esportsmatrix.com/matrix/mobile/images/common/cont/replay/replay-bg.jpg')  center no-repeat #121b27
+}
+.header > view{
+  flex: 1
+}
+.header image{
+  width: 150rpx;
+  height: 150rpx;
+}
+/*tab*/
+.tabar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.tabar > view{
+  box-sizing: border-box;
+  flex: 1;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  color:#fff;
+  border: 1px solid #756c50;
+  text-align: center
+}
+.tabar view.active{
+  color: #f8e3a2;
+}
+.tabbarone,.tabbartwo,.tabbarthree{
+  color:#fff;
+}
+.teamdatas{
+  padding: 30rpx 60rpx 30rpx 20rpx;
+  font-size: 24rpx;
+  background-color: #000
+}
+.teamdatas .title{
+  font-size: 28rpx
+}
+.teamdatas .status{
+  color: #6ed4ff;
+}

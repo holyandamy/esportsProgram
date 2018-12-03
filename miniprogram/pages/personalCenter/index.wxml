@@ -1,0 +1,33 @@
+<!--pages/personalCenter/index.wxml
+<text>pages/personalCenter/index.wxml</text>
+<view>我的资料</view>-->
+<view class='personalCenter'>
+  <view class='header'>
+    <view class='h-left'><image src='https://cdn.esportsmatrix.com/lol/Content/images/uploaded/league/5c677eec-0909-4703-9c49-0c321c805635.png'></image></view>
+    <view class='h-middle'>
+      <view>name</view>
+      <view>1111</view>
+    </view>
+    <view class='h-right'>
+      <view class='recharge' bindtap='addmoney'>充值</view>
+    </view>
+  </view>
+  <!--tab-->
+  <view class='tab'>
+    <view data-num="0"  class='tab-item {{num==0?"active":""}}' bindtap='tabarClick'>总览</view>
+    <view data-num="1"  class='tab-item {{num==1?"active":""}}' bindtap='tabarClick'>资料</view>
+    <view data-num="2"  class='tab-item {{num==2?"active":""}}' bindtap='tabarClick'>任务</view>
+    <view data-num="3"  class='tab-item {{num==3?"active":""}}' bindtap='tabarClick'>好友</view>
+  </view>
+  <view class='tab-des'>
+    <view wx:if='{{num==0}}'>
+      <view class='look-rank' bindtap='lookRank'>查看排行榜</view>
+      <view class='look-rank' bindtap='betsHistory'>下注历史</view>
+    1111111
+    
+    </view>
+    <view wx:if='{{num==1}}'>2222222222</view>
+    <view wx:if='{{num==2}}'>3333333333</view>
+    <view wx:if='{{num==3}}'>4444444</view>
+  </view>
+</view>

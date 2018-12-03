@@ -1,0 +1,11 @@
+{
+	"miniprogramRoot": "./miniprogram",
+	"pluginRoot": "./plugin",
+	"compileType": "plugin",
+	"setting": {
+		"newFeature": true
+	},
+	"appid": "wx2a1c40661f73e10d",
+	"projectname": "ming-xiaochengxu",
+	"condition": {}
+}

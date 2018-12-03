@@ -1,0 +1,53 @@
+
+<view class="wraper">
+  <head>
+    <!-- <view class='login' bindtap='loginhome' slot='login'>登陆</view> -->
+  </head>
+  <!-- <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="name">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" width="100%" height="150"/>
+      </swiper-item>
+    </block>
+  </swiper> -->
+ 
+   <scroll-view class="scroll-view_H" scroll-x scroll-with-animation style="width: 100%">
+     <view class='allgames'>
+      <view class='scroll-view_H-item itemgame {{item.classtype}}' wx:for='{{allgames}}' wx:key='index'>{{item.title}}</view>
+     </view>
+  </scroll-view>
+  <scroll-view class="scroll-view_H" scroll-x scroll-with-animation style="width: 100%">
+     <view class='gamestype'>
+      <view data-num='{{index}}' bindtap='tabarClick' class='scroll-view_H-item g-itemtype {{item}} {{num==index?"active":""}}' wx:for='{{gamestype}}' wx:key='index'>{{item}}</view>
+     </view>
+  </scroll-view>
+
+  <view class='rateblock'>
+    <text class='title'>该场比赛提供现场滚球竞猜</text>
+    <text class='rate'>欧洲收益率</text>
+  </view>
+  <view class='competition'>
+    <view wx:for='{{competition}}' wx:key='index'>
+      <view class='c-title'>
+        <!--倒计时组件-->
+        <countdown countdown='{{item.timetype}}'></countdown>
+      </view>
+      <view class='c-item'>
+        <view class='c-item-left'>
+          <image src=''></image>
+          <view>BO3{{item.title}}</view>
+        </view>
+        <view class='c-item-middle'>
+          <view class='md-one'><image src=''></image><text>{{item.home.name}}</text><text class='right'>{{item.home.rates}}</text></view>
+          <view class='md-two'><image src=''></image><text>{{item.guest.name}}</text><text class='right'>{{item.guest.rates}}</text></view>
+        </view>
+        <view class='c-item-right'>
+          <navigator url='../gamedetail/index' class='btn-a'>竞猜</navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+</view>
+

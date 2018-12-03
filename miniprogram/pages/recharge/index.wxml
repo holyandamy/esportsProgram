@@ -1,0 +1,28 @@
+<!--pages/recharge/index.wxml-->
+<text>pages/recharge/index.wxml</text>
+<view class='addmoney'>
+  <view>
+    <text>充值钱包</text>
+    <text>只剩：</text>
+    <text>6666</text>
+  </view>
+  <view>充值套餐</view>
+  <view class='listsmoney'>
+    <view class='listsmoney-item' wx:for='{{listsmoney}}' wx:key='index'>
+      <view>宝石img</view>
+      <view>{{item.title}}</view>
+    </view>
+  </view>
+   <view class="section">
+    <input class='searchinput' type="number" placeholder="其他数量" />
+  </view>
+  <view>
+    <text>宝石金额</text>
+    <text>宝石img555</text>>
+    <text>宝石img666</text>
+  </view>
+  <view>
+    <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="paymoney" hover-class="other-button-hover"> 立即充值 </button>
+  </view>
+</view>

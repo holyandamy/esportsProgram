@@ -1,0 +1,193 @@
+/* pages/guessingDetail/index.wxss */
+.tx-center{
+  text-align: center
+}
+.colorf8e3a2{
+  color: #f8e3a2;
+}
+.guessingDetail{
+  background-color: #000;
+  padding-bottom: 50rpx
+}
+.tabar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.tabar view{
+  box-sizing: border-box;
+  width: 50%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  color:#fff;
+  border: 1px solid #756c50;
+  text-align: center
+}
+.tabar view.active{
+  color: #f8e3a2;
+}
+.tabbarone,.tabbartwo{
+  color:#fff;
+}
+.gems{
+  margin:10rpx 20rpx
+}
+.gems .title{
+ padding: 30rpx 0;
+  text-align: center;
+  color: #f8e3a2;
+  border-bottom: 6rpx solid #1876b4;
+}
+.gems .title image{
+  width: 60rpx;
+  height: 50rpx;
+  vertical-align: middle
+}
+
+.team{
+  display: flex;
+  height: 110rpx;
+  margin: 0 80rpx;
+  padding: 30rpx 0;
+  font-size: 28rpx;
+  text-align: center
+}
+.team > view{
+  flex: 1
+}
+.team > view image{
+  width: 70rpx;
+  height: 60rpx;
+  vertical-align: middle;
+  margin: 20rpx;
+}
+.team .middle image{
+  width: 170rpx;
+}
+.homeimgsmall{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.rates{
+
+}
+.rates .rateitem{
+  font-size: 28rpx;
+  color:#f8e3a2;
+}
+.rates .rates-des{
+  font-size: 24rpx;
+  color:#666
+}
+
+.addmoney{
+  display: flex;
+  margin-top: 60rpx;
+}
+.addmoney label{
+  width: 150rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 24rpx;
+}
+.addmoney input{
+ flex:1;
+ height: 90rpx;
+ border-radius: 10rpx;
+ border: 1rpx solid #666
+}
+.sorry-tips{
+  font-size: 24rpx;
+  color:red
+}
+.bet-max-min{
+  display: flex;
+  font-size: 28rpx;
+  color: #b4b5bb;
+}
+.bet-max-min view{
+  flex: 1
+}
+.gem-icon{
+  width: 46rpx;
+  height: 46rpx;
+  vertical-align: middle
+}
+.confirm{
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 0 30rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  background: #1464a5;
+  color: #fff;
+}
+
+/*竞猜确认弹窗*/
+.confirmdialog{
+  position: absolute;
+  top:50%;
+  left:50%;
+  z-index: 1;
+  width: 600rpx;
+  height: 800rpx;
+  margin-top: -400rpx;
+  margin-left: -300rpx;
+  text-align: center;
+  font-size: 28rpx;
+  border:2px solid #1464a5;
+  background-color: rgba(0,0,0,.5)
+  /* transform: translate(50%,50%) */
+}
+.confirmdialog >.title{
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 32rpx;
+  border-bottom: 2rpx solid #666;
+  color: #f8e3a2;
+}
+.confirmdialog .content > view{
+  padding: 20rpx 0;
+}
+.d-team{
+  margin: 10rpx 20rpx;
+  padding: 10rpx;
+  border: 1rpx solid #1464a5;
+  border-radius: 5rpx;
+}
+.confirmdialog text{
+  color: #f8e3a2;
+}
+.d-team .title{
+  padding: 20rpx 0;
+  color: #f8e3a2;
+}
+
+.d-team .homeandguest{
+  display: flex;
+  margin: 10rpx 20rpx;
+  border-top:1rpx solid #666;
+  border-bottom:1rpx solid #666;
+}
+
+.d-team .homeandguest > view{
+  flex: 1
+}
+
+.dialogConfirm{
+  width: 400rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  color:#fff;
+  text-align: center;
+  background-color: #1464a5;
+  border-radius: 10rpx;
+}
+.closeDialog{
+  float: right;
+  margin-right: 20rpx;
+}
